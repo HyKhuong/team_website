@@ -1,239 +1,295 @@
 <!DOCTYPE html>
 <html lang="vi">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Cá Nhân - Lê Lâm Anh Vũ</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style.css"/>
     <style>
-        /* Custom Styles */
-        .banner {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-        }
+      /* Custom Styles */
+      .banner {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      }
 
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
 
-        .tech-stack .badge {
-            margin-right: 5px;
-        }
+      .tech-stack .badge {
+        margin-right: 5px;
+      }
 
-        .contact form .form-control {
-            border-radius: 0;
-        }
+      .contact form .form-control {
+        border-radius: 0;
+      }
 
-        .contact form button {
-            border-radius: 0;
-        }
+      .contact form button {
+        border-radius: 0;
+      }
 
-        .social-links a {
-            font-size: 1.2rem;
-        }
+      .social-links a {
+        font-size: 1.2rem;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
-    <header class="bg-light py-3">
-        <div class="container text-center">
-            <nav>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Trang Chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="khuong.html">Hy Khuong</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tri.html">Trong Tri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="anhVu.html">Anh Vu</a></li> 
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
+    <!-- <header class="bg-light py-3">
+      <div class="container text-center">
+        
+      </div>
+    </header> -->
 
     <!-- Banner -->
     <section id="home" class="banner text-center py-5 text-white">
-        <div class="container">
-            <h1>Chào mừng đến với trang cá nhân của tôi</h1>
-            <p>Frontend Developer | Sinh viên Công nghệ thông tin</p>
-        </div>
+      <div class="container">
+        <h1>Chào mừng đến với trang cá nhân của tôi</h1>
+        <p>Frontend Developer | Sinh viên Công nghệ thông tin</p>
+      </div>
     </section>
 
     <!-- About Me -->
     <section id="about" class="about py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t39.30808-6/477125286_1362128128290506_7358680319788679909_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=7y-2Qk-Vw4UQ7kNvgHNNHcv&_nc_oc=Adjpvo9HZy6JijCzfz_2qUnDJvFP_A_3VbdhVR7o07g6EcprKkXXeDmJ9oNDQyoYdLw&_nc_zt=23&_nc_ht=scontent.fsgn1-1.fna&_nc_gid=AIDn64b_o-xyTKkE_VIoRQ0&oh=00_AYGof0T4Pwbjtp6hCRa9H2bcZB11GEDoOHRGFIrOv0O6Nw&oe=67D865FD"
-                        alt="Ảnh đại diện" class="img-fluid rounded-circle mb-3">
-                </div>
-                <div class="col-md-8">
-                    <p>Xin chào! Tôi là Lê Lâm Anh Vũ, sinh viên ngành Công nghệ thông tin với đam mê về Frontend
-                        Development.</p>
-                    <h3>Hành trình học tập</h3>
-                    <div class="year mb-3">
-                        <h4>Năm 1</h4>
-                        <p>Bắt đầu với nền tảng cơ bản về lập trình, HTML, CSS và JavaScript. Tạo các trang web tĩnh đơn
-                            giản và học cách sử dụng Git để quản lý code.</p>
-                    </div>
-                    <div class="year mb-3">
-                        <h4>Năm 2</h4>
-                        <p>Tập trung vào React.js, responsive design và UI/UX principles. Thực hiện các dự án nhỏ và làm
-                            quen với các công cụ phát triển web hiện đại.</p>
-                    </div>
-                    <div class="year mb-3">
-                        <h4>Năm 3</h4>
-                        <p>Phát triển kỹ năng với TypeScript, Next.js và state management (Redux). Tham gia các dự án
-                            thực tế và làm việc với REST APIs.</p>
-                    </div>
-                    <div class="year mb-3">
-                        <h4>Năm 4</h4>
-                        <p>Chuyên sâu về performance optimization, testing và CI/CD. Thực tập tại công ty phát triển
-                            phần mềm và làm các dự án fullstack.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t39.30808-6/477125286_1362128128290506_7358680319788679909_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=7y-2Qk-Vw4UQ7kNvgHNNHcv&_nc_oc=Adjpvo9HZy6JijCzfz_2qUnDJvFP_A_3VbdhVR7o07g6EcprKkXXeDmJ9oNDQyoYdLw&_nc_zt=23&_nc_ht=scontent.fsgn1-1.fna&_nc_gid=AIDn64b_o-xyTKkE_VIoRQ0&oh=00_AYGof0T4Pwbjtp6hCRa9H2bcZB11GEDoOHRGFIrOv0O6Nw&oe=67D865FD"
+              alt="Ảnh đại diện"
+              class="img-fluid rounded-circle mb-3"
+            />
+          </div>
+          <div class="col-md-8">
+            <p>
+              Xin chào! Tôi là Lê Lâm Anh Vũ, sinh viên ngành Công nghệ thông
+              tin với đam mê về Frontend Development.
+            </p>
+            <h3>Hành trình học tập</h3>
+            <div class="year mb-3">
+              <h4>Năm 1</h4>
+              <p>
+                Bắt đầu với nền tảng cơ bản về lập trình, HTML, CSS và
+                JavaScript. Tạo các trang web tĩnh đơn giản và học cách sử dụng
+                Git để quản lý code.
+              </p>
             </div>
+            <div class="year mb-3">
+              <h4>Năm 2</h4>
+              <p>
+                Tập trung vào React.js, responsive design và UI/UX principles.
+                Thực hiện các dự án nhỏ và làm quen với các công cụ phát triển
+                web hiện đại.
+              </p>
+            </div>
+            <div class="year mb-3">
+              <h4>Năm 3</h4>
+              <p>
+                Phát triển kỹ năng với TypeScript, Next.js và state management
+                (Redux). Tham gia các dự án thực tế và làm việc với REST APIs.
+              </p>
+            </div>
+            <div class="year mb-3">
+              <h4>Năm 4</h4>
+              <p>
+                Chuyên sâu về performance optimization, testing và CI/CD. Thực
+                tập tại công ty phát triển phần mềm và làm các dự án fullstack.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="skills py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center py-5" style="font-size: 60px;">Kỹ năng</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <h3>Frontend Core</h3>
-                    <ul class="list-unstyled">
-                        <li>HTML5/CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>TypeScript</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>Frameworks & Libraries</h3>
-                    <ul class="list-unstyled">
-                        <li>React.js</li>
-                        <li>Next.js</li>
-                        <li>Redux</li>
-                        <li>Tailwind CSS</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>Developer Tools</h3>
-                    <ul class="list-unstyled">
-                        <li>Git & GitHub</li>
-                        <li>VS Code</li>
-                        <li>Chrome DevTools</li>
-                        <li>npm/yarn</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>Soft Skills</h3>
-                    <ul class="list-unstyled">
-                        <li>Team Collaboration</li>
-                        <li>Problem Solving</li>
-                        <li>Time Management</li>
-                        <li>Technical Writing</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="text-center py-5" style="font-size: 60px">Kỹ năng</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Frontend Core</h3>
+            <ul class="list-unstyled">
+              <li>HTML5/CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Frameworks & Libraries</h3>
+            <ul class="list-unstyled">
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>Redux</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Developer Tools</h3>
+            <ul class="list-unstyled">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Chrome DevTools</li>
+              <li>npm/yarn</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Soft Skills</h3>
+            <ul class="list-unstyled">
+              <li>Team Collaboration</li>
+              <li>Problem Solving</li>
+              <li>Time Management</li>
+              <li>Technical Writing</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="projects py-5">
-        <div class="container">
-            <h2 class="text-center py-5" style="font-size: 60px;">Projects</h2>
-            <div class=" row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="https://th.bing.com/th/id/OIP.8-8IUgx5vkT3a1rewbDQ4QHaFj?rs=1&pid=ImgDetMain"
-                            class="card-img-top" alt="E-Learning Platform">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Learning Platform</h5>
-                            <p class="card-text">Phát triển website học trực tuyến với React và Node.js. Tích hợp video
-                                streaming, quiz interactivity và tracking tiến độ học tập.</p>
-                            <div class="tech-stack mb-2">
-                                <span class="badge badge-primary">React</span>
-                                <span class="badge badge-secondary">Express.js</span>
-                                <span class="badge badge-success">MongoDB</span>
-                                <span class="badge badge-info">WebRTC</span>
-                            </div>
-
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="text-center py-5" style="font-size: 60px">Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="https://th.bing.com/th/id/OIP.8-8IUgx5vkT3a1rewbDQ4QHaFj?rs=1&pid=ImgDetMain"
+                class="card-img-top"
+                alt="E-Learning Platform"
+              />
+              <div class="card-body">
+                <h5 class="card-title">E-Learning Platform</h5>
+                <p class="card-text">
+                  Phát triển website học trực tuyến với React và Node.js. Tích
+                  hợp video streaming, quiz interactivity và tracking tiến độ
+                  học tập.
+                </p>
+                <div class="tech-stack mb-2">
+                  <span class="badge badge-primary">React</span>
+                  <span class="badge badge-secondary">Express.js</span>
+                  <span class="badge badge-success">MongoDB</span>
+                  <span class="badge badge-info">WebRTC</span>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="https://th.bing.com/th/id/OIP.nFer-Q_ePMKivTZRVeJMpAHaED?w=1165&h=637&rs=1&pid=ImgDetMain"
-                            class="card-img-top" alt="Weather Dashboard">
-                        <div class="card-body">
-                            <h5 class="card-title">Weather Dashboard</h5>
-                            <p class="card-text">Ứng dụng theo dõi thời tiết với dữ liệu thời gian thực. Tích hợp
-                                OpenWeather API, hiển thị biểu đồ và bản đồ tương tác.</p>
-                            <div class="tech-stack mb-2">
-                                <span class="badge badge-primary">Vue.js</span>
-                                <span class="badge badge-secondary">Tailwind CSS</span>
-                                <span class="badge badge-success">Chart.js</span>
-                                <span class="badge badge-info">REST API</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="https://th.bing.com/th/id/OIP.bnwii-VQyruEAR3m07VcowHaFj?rs=1&pid=ImgDetMain"
-                            class="card-img-top" alt="Task Management">
-                        <div class="card-body">
-                            <h5 class="card-title">Task Management System</h5>
-                            <p class="card-text">Hệ thống quản lý công việc với giao diện drag-and-drop. Hỗ trợ phân
-                                công task, theo dõi deadline và báo cáo tiến độ.</p>
-                            <div class="tech-stack mb-2">
-                                <span class="badge badge-primary">Next.js</span>
-                                <span class="badge badge-secondary">TypeScript</span>
-                                <span class="badge badge-success">Prisma</span>
-                                <span class="badge badge-info">PostgreSQL</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="https://th.bing.com/th/id/OIP.nFer-Q_ePMKivTZRVeJMpAHaED?w=1165&h=637&rs=1&pid=ImgDetMain"
+                class="card-img-top"
+                alt="Weather Dashboard"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Weather Dashboard</h5>
+                <p class="card-text">
+                  Ứng dụng theo dõi thời tiết với dữ liệu thời gian thực. Tích
+                  hợp OpenWeather API, hiển thị biểu đồ và bản đồ tương tác.
+                </p>
+                <div class="tech-stack mb-2">
+                  <span class="badge badge-primary">Vue.js</span>
+                  <span class="badge badge-secondary">Tailwind CSS</span>
+                  <span class="badge badge-success">Chart.js</span>
+                  <span class="badge badge-info">REST API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="https://th.bing.com/th/id/OIP.bnwii-VQyruEAR3m07VcowHaFj?rs=1&pid=ImgDetMain"
+                class="card-img-top"
+                alt="Task Management"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Task Management System</h5>
+                <p class="card-text">
+                  Hệ thống quản lý công việc với giao diện drag-and-drop. Hỗ trợ
+                  phân công task, theo dõi deadline và báo cáo tiến độ.
+                </p>
+                <div class="tech-stack mb-2">
+                  <span class="badge badge-primary">Next.js</span>
+                  <span class="badge badge-secondary">TypeScript</span>
+                  <span class="badge badge-success">Prisma</span>
+                  <span class="badge badge-info">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact py-5 bg-light ">
-        <div class="container">
-            <h2 class="text-center py-5" style="font-size: 60px;">Contact</h2>
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Tên của bạn" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" placeholder="Tin nhắn của bạn" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Gửi</button>
-            </form>
-        </div>
+    <section id="contact" class="contact py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center py-5" style="font-size: 60px">Contact</h2>
+        <form>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Tên của bạn"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              placeholder="Tin nhắn của bạn"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Gửi</button>
+        </form>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-3">
-        <div class="container text-center">
-            <p>© 2024 Lê Lâm Anh Vũ. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/AnnhVuu" class="text-white mx-2">GitHub</a>
-                <a href="https://www.facebook.com/annh.vu.486916/" class="text-white mx-2">Facebook</a>
-            </div>
+      <div class="container text-center">
+        <p>© 2024 Lê Lâm Anh Vũ. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/AnnhVuu" class="text-white mx-2"
+            >GitHub</a
+          >
+          <a
+            href="https://www.facebook.com/annh.vu.486916/"
+            class="text-white mx-2"
+            >Facebook</a
+          >
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

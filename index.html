@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
 
- 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./students/khuong.html">Hy Khuong</a></li>
-                <li><a href="../team_website/students/tri.html">Vo Trong Tri</a></li>
-                <li><a href="../team_website//students/anhVu.html">Anh Vu</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Nhóm 19</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+               
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            </ul>
-        </nav>
-    </header>
+    <!-- Main Content -->
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Welcome to My Website</h1>
+        <p class="lead">Đây là trang chủ của website. Hãy chọn một sinh viên để xem thông tin chi tiết.</p>
+
+        <!-- Student Cards -->
+        <div class="row mt-4">
+            <!-- Hy Khuong -->
+            <div class="col-md-4">
+                <div class="card student-card">
+                    <img src="../assets/images/download.png" class="card-img-top" alt="Hy Khuong">
+                    <div class="card-body">
+                        <h5 class="card-title">Hy Khuong</h5>
+                        <p class="card-text">Full Stack Developer</p>
+                        <a href="./students/khuong.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vo Trong Tri -->
+            <div class="col-md-4">
+                <div class="card student-card">
+                    <img src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t39.30808-6/467643405_4046719802274081_8811673038661470147_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE_Seqk5w16gLWaj-lbbqrH1i3zx2etAvvWLfPHZ60C-_RMmue_WeVyAJYBxdcCzO-PkO0bZrzXBZqgLrH_4pwr&_nc_ohc=yJN9-Al1RDEQ7kNvgGmamw7&_nc_oc=AdgotAnrmQdlSNt9B1JAetOvf1rBeUatYM0Zeac8AHaRsgngzA9zBlPTNTcwWT_TRAA&_nc_zt=23&_nc_ht=scontent.fsgn1-1.fna&_nc_gid=Av7RDl9RChq400nrpWPak-p&oh=00_AYHJjaaPhsUMHVU4k6sHJWSZ9M9vCsOmV53NMKuz92RY9w&oe=67D862C9" class="card-img-top" alt="Vo Trong Tri">
+                    <div class="card-body">
+                        <h5 class="card-title">Vo Trong Tri</h5>
+                        <p class="card-text">Back-End Developer</p>
+                        <a href="./students/tri.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anh Vu -->
+            <div class="col-md-4">
+                <div class="card student-card">
+                    <img src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t39.30808-6/477125286_1362128128290506_7358680319788679909_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=7y-2Qk-Vw4UQ7kNvgHNNHcv&_nc_oc=Adjpvo9HZy6JijCzfz_2qUnDJvFP_A_3VbdhVR7o07g6EcprKkXXeDmJ9oNDQyoYdLw&_nc_zt=23&_nc_ht=scontent.fsgn1-1.fna&_nc_gid=AIDn64b_o-xyTKkE_VIoRQ0&oh=00_AYGof0T4Pwbjtp6hCRa9H2bcZB11GEDoOHRGFIrOv0O6Nw&oe=67D865FD" class="card-img-top" alt="Anh Vu">
+                    <div class="card-body">
+                        <h5 class="card-title">Anh Vu</h5>
+                        <p class="card-text">Front-End Developer</p>
+                        <a href="./students/anhVu.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
